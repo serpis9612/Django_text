@@ -1,0 +1,62 @@
+Cadenas y Slices Python
+
+>>> "123"
+'123'
+>>> "123" * 3
+'123123123'
+>>> "123" + "456"
+'123456'
+>>> ("Hip"* 3) + "" + "Hurra"
+'HipHipHipHurra'
+>>> ("Hip"* 3) + " " + "Hurra"
+'HipHipHip Hurra'
+>>> f"{"Hip"*3}Hurra"
+  File "<stdin>", line 1
+    f"{"Hip"*3}Hurra"
+        ^^^
+SyntaxError: f-string: expecting '}'
+>>> f'{"Hip"*3}Hurra'
+'HipHipHipHurra'
+>>> f"{"Hip"*3}Hurra"
+  File "<stdin>", line 1
+    f"{"Hip"*3}Hurra"
+        ^^^
+SyntaxError: f-string: expecting '}'
+>>> f"{"Hip" * 3}Hurra"
+  File "<stdin>", line 1
+    f"{"Hip" * 3}Hurra"
+        ^^^
+SyntaxError: f-string: expecting '}'
+>>> f'{"Hip"*3}Hurra'
+'HipHipHipHurra'
+>>> mi_cadena = "Platzi"
+>>> len(my_cadena)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'my_cadena' is not defined. Did you mean: 'mi_cadena'?
+>>> mi_cadena
+'Platzi'
+>>> len(mi_cadena)
+6
+>>> mi_cadena [0]
+'P'
+>>> mi_cadena [1]
+'l'
+>>> mi_cadena [2]
+'a'
+>>> mi_cadena [2:]
+'atzi'
+>>> mi_cadena [:3]
+'Pla'
+>>> mi_cadena [:-2]
+'Plat'
+>>> mi_cadena [::2]
+'Paz'
+>>> "Yo amo a:" + mi_cadena
+'Yo amo a:Platzi'
+>>> "Yo amo a " + mi_cadena
+'Yo amo a Platzi'
+>>> f' Yo amo a {mi_cadena}'
+' Yo amo a Platzi'
+>>> f' Yo amo a {mi_cadena},' * 100
+' Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi, Yo amo a Platzi,'
